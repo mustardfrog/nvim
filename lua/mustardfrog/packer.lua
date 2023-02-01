@@ -16,11 +16,23 @@ return require('packer').startup(function(use)
 	use({
 		'rose-pine/neovim',
 		as = 'rose-pine',
+        -- require('rose-pine/neovim').setup({
+        --     -- dark_variant = 'main',
+        --     dark_variant = 'dawn',
+        -- }),
 		config = function()
-			vim.cmd('colorscheme rose-pine')
+            -- vim.o.background='light'
+            -- vim.cmd('colorscheme rose-pine')
 		end
 	})
+    use 'folke/tokyonight.nvim'
+    use {
+        'uloco/bluloco.nvim',
+        requires = { 'rktjmp/lush.nvim' }
+    }
+    use { "catppuccin/nvim", as = "catppuccin" }
 
+    use 'ap/vim-css-color'
     use 'sbdchd/neoformat'
     use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
 	use('nvim-treesitter/playground')
@@ -57,9 +69,8 @@ return require('packer').startup(function(use)
         end
     }
 
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    }
-
+    -- use {
+    --     'nvim-lualine/lualine.nvim',
+    --     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    -- }
 end)

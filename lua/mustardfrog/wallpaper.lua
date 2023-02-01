@@ -14,10 +14,11 @@ M.search_wallpapers = function()
             actions.select_default:replace(function()
                 actions.close(bufnr)
 
-                local output = vim.fn.system("killall bash")
+                -- local output = vim.fn.system("killall bash")
                 local selection = require("telescope.actions.state").get_selected_entry(bufnr)
 
-                --local cmd = "swaymsg output \'*\' bg " .. selection.cwd .. "/" .. selection.value .. " fill"
+                -- local cmd = "swaymsg output \'*\' bg " .. selection.cwd .. selection.value .. " fill"
+                -- local cmd = "swaybg -i " .. selection.cwd ..  selection.value .. " -m fill -o \'*\'"
                 local cmd = "feh " .. selection.cwd .. "/" .. selection.value .. " --bg-fill"
                 print(cmd)
 

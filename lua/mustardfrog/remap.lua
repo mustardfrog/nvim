@@ -23,6 +23,10 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- next greatest remap ever : asbjornHaland
+-- vim.api.nvim_set_keymap('v', '<leader>yy', '<cmd>:call system("wl-copy", @")<cr>:call system("wl-copy", @")<cr>', {noremap = false, silent = false})
+-- vim.cmd[[
+--     vmap <leader>y y:call system("wl-copy", @")<CR>:call system("wl-copy", @")<CR>
+--     ]]
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 

@@ -85,6 +85,16 @@ _G.packer_plugins = {
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["bluloco.nvim"] = {
+    loaded = true,
+    path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/bluloco.nvim",
+    url = "https://github.com/uloco/bluloco.nvim"
+  },
+  catppuccin = {
+    loaded = true,
+    path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -125,10 +135,10 @@ _G.packer_plugins = {
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
-  ["lualine.nvim"] = {
+  ["lush.nvim"] = {
     loaded = true,
-    path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
+    path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -160,12 +170,6 @@ _G.packer_plugins = {
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  ["nvim-web-devicons"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/chaeng/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -182,7 +186,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["rose-pine"] = {
-    config = { "\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0" },
+    config = { "\27LJ\2\n\\\0\0\3\0\6\0\t6\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\nlight\15background\6o\bvim\0" },
     loaded = true,
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
@@ -192,10 +196,20 @@ _G.packer_plugins = {
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   undotree = {
     loaded = true,
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-css-color"] = {
+    loaded = true,
+    path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/vim-css-color",
+    url = "https://github.com/ap/vim-css-color"
   },
   ["vim-fugitive"] = {
     loaded = true,
@@ -211,7 +225,7 @@ try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K
 time([[Config for Comment.nvim]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")
+try_loadstring("\27LJ\2\n\\\0\0\3\0\6\0\t6\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\4\0'\2\5\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\nlight\15background\6o\bvim\0", "config", "rose-pine")
 time([[Config for rose-pine]], false)
 
 _G._packer.inside_compile = false

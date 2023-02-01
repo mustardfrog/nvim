@@ -1,5 +1,10 @@
 --vim.opt.guicursor = ""
 
+vim.cmd[[
+    set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor/lCursor,r-cr:hor20,o:hor50
+]]
+-- vim.o.background='light'
+vim.g.colorscheme="catppuccin-macchiato"
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -32,4 +37,3 @@ vim.opt.updatetime = 50
 vim.g.mapleader = " "
 
 --vim.opt.colorcolumn = "80"
-
