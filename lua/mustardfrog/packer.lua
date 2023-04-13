@@ -13,6 +13,7 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
+    -- themes
 	use({
 		'rose-pine/neovim',
 		as = 'rose-pine',
@@ -26,19 +27,24 @@ return require('packer').startup(function(use)
 		end
 	})
     use 'folke/tokyonight.nvim'
-    use {
-        'uloco/bluloco.nvim',
-        requires = { 'rktjmp/lush.nvim' }
-    }
+    -- use {
+    --     'uloco/bluloco.nvim',
+    --     requires = { 'rktjmp/lush.nvim' }
+    -- }
     use { "catppuccin/nvim", as = "catppuccin" }
+    -- use 'cocopon/iceberg.vim'
 
     use 'ap/vim-css-color'
-    use 'sbdchd/neoformat'
     use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
+    use 'nvim-treesitter/nvim-treesitter-context'
 	use('nvim-treesitter/playground')
+
 	use('theprimeagen/harpoon')
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
+    -- use 'habamax/vim-godot'
+
+    use 'simrat39/rust-tools.nvim'
 
 	use {
 		'VonHeikemen/lsp-zero.nvim',
@@ -62,6 +68,14 @@ return require('packer').startup(function(use)
 		}
 	}
 
+    -- Debugging
+    use 'rcarriga/nvim-dap-ui'
+    use 'mfussenegger/nvim-dap'
+    use 'theHamsta/nvim-dap-virtual-text'
+    use 'nvim-telescope/telescope-dap.nvim'
+    use 'leoluz/nvim-dap-go'
+    -- use "folke/neodev.nvim"
+
     use {
         'numToStr/Comment.nvim',
         config = function()
@@ -69,8 +83,15 @@ return require('packer').startup(function(use)
         end
     }
 
-    -- use {
-    --     'nvim-lualine/lualine.nvim',
-    --     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    -- }
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons', -- optional, for file icons
+        },
+        -- tag = 'nightly' -- optional, updated every week. (see issue #1193)
+    }
 end)
