@@ -33,6 +33,7 @@ return require('packer').startup(function(use)
     -- }
     use { "catppuccin/nvim", as = "catppuccin" }
     -- use 'cocopon/iceberg.vim'
+    use "rebelot/kanagawa.nvim"
 
     use 'ap/vim-css-color'
     use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
@@ -45,28 +46,28 @@ return require('packer').startup(function(use)
     -- use 'habamax/vim-godot'
 
     use 'simrat39/rust-tools.nvim'
+    -- use 'Exafunction/codeium.vim'
+    -- 'VonHeikemen/lsp-zero.nvim',
 
-	use {
-		'VonHeikemen/lsp-zero.nvim',
-		requires = {
-			-- LSP Support
-			{'neovim/nvim-lspconfig'},
-			{'williamboman/mason.nvim'},
-			{'williamboman/mason-lspconfig.nvim'},
+    -- LSP Support
+    use('neovim/nvim-lspconfig')
+    use('onsails/lspkind.nvim')
 
-			-- Autocompletion
-			{'hrsh7th/nvim-cmp'},
-			{'hrsh7th/cmp-buffer'},
-			{'hrsh7th/cmp-path'},
-			{'saadparwaiz1/cmp_luasnip'},
-			{'hrsh7th/cmp-nvim-lsp'},
-			{'hrsh7th/cmp-nvim-lua'},
+    use('williamboman/mason.nvim')
+    use('williamboman/mason-lspconfig.nvim')
 
-			-- Snippets
-			{'L3MON4D3/LuaSnip'},
-			{'rafamadriz/friendly-snippets'},
-		}
-	}
+    -- Autocompletion
+    use('hrsh7th/nvim-cmp')
+    use('hrsh7th/cmp-buffer')
+    use('hrsh7th/cmp-path')
+    use('saadparwaiz1/cmp_luasnip')
+    use('hrsh7th/cmp-cmdline')
+    use('hrsh7th/cmp-nvim-lsp')
+    use('hrsh7th/cmp-nvim-lua')
+
+    -- Snippets
+    use('L3MON4D3/LuaSnip')
+    use('rafamadriz/friendly-snippets')
 
     -- Debugging
     use 'rcarriga/nvim-dap-ui'

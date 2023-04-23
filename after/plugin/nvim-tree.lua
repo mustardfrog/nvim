@@ -40,7 +40,7 @@ require("nvim-tree").setup({
       mappings = {
           custom_only = false,
           list = {
-              { key = "u", action = "dir_up" },
+              -- { key = "u", action = "dir_up" },
               -- user mappings go here
           },
       },

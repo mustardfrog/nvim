@@ -48,3 +48,15 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 -- vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>va", "[[:lua require('mustardfrog.wallpaper').search_wallpapers()<CR>]]")
+-- vim.api.nvim_create_autocmd("CursorHold")
+--
+vim.cmd [[
+    " press <Tab> to expand or jump in a snippet. These can also be mapped separately
+    " via <Plug>luasnip-expand-snippet and <Plug>luasnip-jump-next.
+    imap <silent><expr> <C-d> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>' 
+    " -1 for jumping backwards.
+    inoremap <silent> <C-r> <cmd>lua require'luasnip'.jump(-1)<Cr>
+
+    snoremap <silent> <C-d> <cmd>lua require('luasnip').jump(1)<Cr>
+    snoremap <silent> <C-r> <cmd>lua require('luasnip').jump(-1)<Cr>
+]]
