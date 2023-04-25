@@ -35,7 +35,7 @@ return require('packer').startup(function(use)
     -- use 'cocopon/iceberg.vim'
     use "rebelot/kanagawa.nvim"
 
-    use 'ap/vim-css-color'
+    use 'norcalli/nvim-colorizer.lua'
     use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
     use 'nvim-treesitter/nvim-treesitter-context'
 	use('nvim-treesitter/playground')

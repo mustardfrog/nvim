@@ -2,6 +2,7 @@ vim.cmd [[
     set completeopt=menu,menuone,noselect
 ]]
 
+require 'colorizer'.setup()
 -- Set up nvim-cmp.
 local cmp = require 'cmp'
 local lsp = require("lspconfig")
@@ -35,6 +36,7 @@ cmp.setup({
     }),
     sources = cmp.config.sources({
         { name = 'nvim_lsp' },
+        { name = 'path' },
         { name = 'luasnip' }, -- For luasnip users.
     }, {
         { name = 'buffer' },
