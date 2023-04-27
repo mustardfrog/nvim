@@ -105,7 +105,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-local servers = { 'tsserver', 'clangd', 'lua_ls', 'gopls', 'jdtls', 'rust_analyzer' }
+local servers = { 'tsserver', 'clangd', 'lua_ls', 'gopls', 'jdtls', 'rust_analyzer', 'pyright' }
 
 for i = 1, #servers do
     lsp[servers[i]].setup {

@@ -1,12 +1,12 @@
---vim.opt.guicursor = ""
 
 -- vim.cmd[[
 --     set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor/lCursor,r-cr:hor20,o:hor50
 -- ]]
 -- vim.opt.background='dark'
--- vim.g.colorscheme="catppuccin-macchiato"
+--vim.opt.guicursor = ""
 vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.opt.cursorline = true
 
 vim.opt.ignorecase = true
 
@@ -26,7 +26,6 @@ vim.opt.undofile = true
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
-
 -- vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
@@ -35,13 +34,4 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 vim.g.mapleader = " "
-
 --vim.opt.colorcolumn = "80"
-
-local function removeColorSignColumn()
-    vim.cmd[[highlight SignColumn guibg=NONE]]
-end
-
--- vim.api.nvim_create_autocmd("BufEnter", {
-    -- callback = removeColorSignColumn
--- })
