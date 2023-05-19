@@ -1,6 +1,7 @@
 vim.cmd [[
     set completeopt=menu,menuone,noselect
 ]]
+vim.opt.termguicolors = true
 
 require 'colorizer'.setup()
 -- Set up nvim-cmp.
