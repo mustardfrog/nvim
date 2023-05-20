@@ -1,9 +1,9 @@
 require('mustardfrog.wallpaper')
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>pv",vim.cmd.Ex)
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("i", "jk", "<Esc>")
-vim.keymap.set({'n', 'v'}, "X","<cmd>only<CR>")
+-- vim.keymap.set({ 'n', 'v' }, "X", "<cmd>only<CR>")
 
 --vim.cmd [[
 --    vmap <C-s> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
@@ -28,17 +28,17 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 -- vim.cmd[[
 --     vmap <leader>y y:call system("wl-copy", @")<CR>:call system("wl-copy", @")<CR>
 --     ]]
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- This is going to get me cancelled
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux new tmux-sessionizer<CR>")
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+vim.keymap.set("n", "<leader>fm", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
@@ -53,7 +53,7 @@ vim.keymap.set("n", "<leader>va", "[[:lua require('mustardfrog.wallpaper').searc
 vim.cmd [[
     " press <Tab> to expand or jump in a snippet. These can also be mapped separately
     " via <Plug>luasnip-expand-snippet and <Plug>luasnip-jump-next.
-    imap <silent><expr> <C-d> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>' 
+    imap <silent><expr> <C-d> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>'
     " -1 for jumping backwards.
     inoremap <silent> <C-r> <cmd>lua require'luasnip'.jump(-1)<Cr>
 

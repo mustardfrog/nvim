@@ -85,6 +85,11 @@ _G.packer_plugins = {
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["abyss.nvim"] = {
+    loaded = true,
+    path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/abyss.nvim",
+    url = "https://github.com/barrientosvctor/abyss.nvim"
+  },
   catppuccin = {
     loaded = true,
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/catppuccin",
@@ -125,6 +130,16 @@ _G.packer_plugins = {
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  gruvbox = {
+    loaded = true,
+    path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/morhetz/gruvbox"
+  },
+  ["gruvbox-baby"] = {
+    loaded = true,
+    path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/gruvbox-baby",
+    url = "https://github.com/luisiacc/gruvbox-baby"
+  },
   harpoon = {
     loaded = true,
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -144,6 +159,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
+  },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -210,6 +235,11 @@ _G.packer_plugins = {
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
+  ["onedarkpro.nvim"] = {
+    loaded = true,
+    path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/onedarkpro.nvim",
+    url = "https://github.com/olimorris/onedarkpro.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -235,6 +265,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
+  },
+  scooby_blue = {
+    loaded = true,
+    path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/scooby_blue",
+    url = "/home/chaeng/fun/scooby_blue"
+  },
+  sonokai = {
+    loaded = true,
+    path = "/home/chaeng/.local/share/nvim/site/pack/packer/start/sonokai",
+    url = "https://github.com/sainnhe/sonokai"
   },
   ["telescope-dap.nvim"] = {
     loaded = true,

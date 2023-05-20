@@ -14,6 +14,13 @@ return require('packer').startup(function(use)
 	}
 
     -- themes
+    -- use '/home/chaeng/fun/scooby_blue'
+    -- use 'barrientosvctor/abyss.nvim'
+    -- use 'olimorris/onedarkpro.nvim'
+
+    use { 'rktjmp/lush.nvim' }
+    use 'luisiacc/gruvbox-baby'
+    use 'morhetz/gruvbox'
 	use({
 		'rose-pine/neovim',
 		as = 'rose-pine',

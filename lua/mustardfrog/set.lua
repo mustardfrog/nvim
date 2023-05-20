@@ -1,4 +1,3 @@
-
 -- vim.cmd[[
 --     set guicursor=n-v-c:block-Cursor/lCursor,i-ci-ve:ver25-Cursor/lCursor,r-cr:hor20,o:hor50
 -- ]]
@@ -34,4 +33,7 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 vim.g.mapleader = " "
+vim.g.gruvbox_baby_background_color = "dark"
+vim.g.gruvbox_contrast_dark = 'hard'
+
 --vim.opt.colorcolumn = "80"
