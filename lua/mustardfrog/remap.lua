@@ -20,6 +20,10 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- painful reality of 60% keyboard
+vim.keymap.set("i", "ttt", "`")
+vim.keymap.set("i", "ttd", "~")
+
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
