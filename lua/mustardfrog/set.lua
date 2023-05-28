@@ -36,4 +36,5 @@ vim.g.mapleader = " "
 vim.g.gruvbox_baby_background_color = "dark"
 vim.g.gruvbox_contrast_dark = 'hard'
 
+vim.g.codeium_enabled = false
 --vim.opt.colorcolumn = "80"

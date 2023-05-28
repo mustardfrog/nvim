@@ -64,3 +64,5 @@ vim.cmd [[
     snoremap <silent> <C-d> <cmd>lua require('luasnip').jump(1)<Cr>
     snoremap <silent> <C-r> <cmd>lua require('luasnip').jump(-1)<Cr>
 ]]
+
+vim.keymap.set('i', '<C-f>', function () return vim.fn['codeium#Accept']() end, { expr = true })

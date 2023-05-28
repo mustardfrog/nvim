@@ -3,14 +3,17 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-vim.api.nvim_create_autocmd("VimEnter", {
-    callback = function()
-        vim.cmd("silent! lua require('telescope.builtin').find_files()")
-    end,
-})
+-- vim.api.nvim_create_autocmd("VimEnter", {
+--     callback = function()
+--         vim.cmd("silent! lua require('telescope.builtin').find_files()")
+--     end,
+-- })
 
 require('telescope').setup {
     defaults = {
+        file_ignore_patterns = {
+            "node_modules"
+        },
     },
     pickers = {
         find_files = {

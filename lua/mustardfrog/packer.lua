@@ -54,7 +54,7 @@ return require('packer').startup(function(use)
     -- use 'habamax/vim-godot'
 
     use 'simrat39/rust-tools.nvim'
-    -- use 'Exafunction/codeium.vim'
+    use 'Exafunction/codeium.vim'
     -- 'VonHeikemen/lsp-zero.nvim',
 
     -- LSP Support
