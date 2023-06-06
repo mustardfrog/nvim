@@ -6,18 +6,14 @@ vim.cmd.packadd('packer.nvim')
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-
-  use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.0',
-    -- or                            , branch = '0.1.x',
-    requires = { { 'nvim-lua/plenary.nvim' } }
-  }
-
   -- themes
   -- use '/home/chaeng/fun/scooby_blue'
   -- use 'barrientosvctor/abyss.nvim'
   -- use 'olimorris/onedarkpro.nvim'
-
+  -- use {
+    --     'uloco/bluloco.nvim',
+    --     requires = { 'rktjmp/lush.nvim' }
+    -- }
   use { 'rktjmp/lush.nvim' }
   use 'luisiacc/gruvbox-baby'
   use 'morhetz/gruvbox'
@@ -45,13 +41,9 @@ return require('packer').startup(function(use)
     end
   })
   use 'folke/tokyonight.nvim'
-  -- use {
-  --     'uloco/bluloco.nvim',
-  --     requires = { 'rktjmp/lush.nvim' }
-  -- }
   use { "catppuccin/nvim", as = "catppuccin" }
-  -- use 'cocopon/iceberg.vim'
   use "rebelot/kanagawa.nvim"
+  -- use 'cocopon/iceberg.vim'
 
   use 'norcalli/nvim-colorizer.lua'
   use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
@@ -74,6 +66,11 @@ return require('packer').startup(function(use)
 
   use('williamboman/mason.nvim')
   use('williamboman/mason-lspconfig.nvim')
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.0',
+    -- or                            , branch = '0.1.x',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  }
 
   -- Autocompletion
   use('hrsh7th/nvim-cmp')
@@ -83,10 +80,6 @@ return require('packer').startup(function(use)
   use('hrsh7th/cmp-cmdline')
   use('hrsh7th/cmp-nvim-lsp')
   use('hrsh7th/cmp-nvim-lua')
-  use {
-    "windwp/nvim-autopairs",
-    config = function() require("nvim-autopairs").setup {} end
-  }
 
   use "windwp/nvim-ts-autotag"
   -- Snippets
